@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href='css/index.css'>
 
 </head>
- 
+
 <body>
 
     <!--div class="block">
@@ -48,10 +48,23 @@
     <section class="hero is-fullheight" id="home">
         <div class="hero-body">
             <div class="container" id="banner" align="center">
-                <h1 class="title is-2" id="me">HYPERSPACE.JS</h1><br><br>
-                <h1 class="title is-1" id="soon">COMING SOON</h1>
-                <!--a class="button is-medium">Get Started</a><a class="button is-medium" href="js/hyperspace.js" download>Download</a-->
+                <div class="hyper_header">
+                    <h3 class="title is-2" id="me">HYPERSPACE.JS</h3>
+                    <!--<br><br> <h1 class="title is-1" id="soon">COMING SOON</h1> -->
+                    <div class="navbar-menu">
+                        <div class="navbar-start">
+                            <a class="navbar-item button is-rounded" href="#docs">Read Docs
+                                &nbsp; <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span></a>
+                        </div>
+                        <div class="navbar-end">
+                            <a class="navbar-item button is-rounded" href="https://github.com/r-arvind/hyperspace.js"
+                                target="_blank">Check me out
+                                &nbsp; <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span></a>
+                        </div>
+                    </div>
                 </div>
+                <!--a class="button is-medium">Get Started</a><a class="button is-medium" href="js/hyperspace.js" download>Download</a-->
+            </div>
         </div>
     </section>
 
@@ -84,7 +97,7 @@
             </div>
         </div>
 
-<!-- second row 
+<!-- second row
 <div class="tile is-ancestor" style="margin:10px;">
 
     <div class="tile is-parent" id="r2-t4" onmouseenter='hoverIn(tile4)' onmouseleave="hoverOut(tile4)" style="background-image: url('assets/bridge.jpg');">
@@ -124,26 +137,63 @@
     </p>
 </section>
 
-<!-- cards 
+<!-- cards -->
 
-<div class="columns features">
-    <!-- first card: github 
-    <div class="column is-4">
-      <div class="card">
-        <div class="card-image has-text-centered">
-            <i class="fa fa-github"></i>
-        </div>
-        <div class="card-content">
-          <div class="content">
-            <h4>Check Me out on Github. </h4>
-            <p>Well, currently I don't have much projects which I can show off but I do hope that soon there will be lots of fun stuff for you to check out!  </p>
-            <p><a href="https://github.com/r-arvind">Check Out</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="columns features" id="docs">
 
-    <!-- second card: blog post 
+        <div class="column is-8">
+            <div class="content">
+                <h1>Hyperspace.js Usage</h1>
+                <p>Using hyperspace is really easy. Download hyperspace for your project
+                    <a download href="https://raw.githubusercontent.com/r-arvind/hyperspace.js/master/hyperspace.js"
+                        title="hyperspace">link here</a>.
+                </p>
+                <div class="section">
+                    <h2>Adding to html</h2>
+                    <p>Include hyperspace.js into your html file by using the script tag.</p>
+                    <p>You can either provide the downloaded, locally available hyperspace.js or you can directly
+                        provide
+                        the raw url of hyperspace.js in your website to use it for your work.</p>
+                    <pre>&lt;script src="./hyperspace.js"&gt;&lt;/script&gt;</pre>
+                    <p>or</p>
+                    <pre>&lt;script src="https://raw.githubusercontent.com/r-arvind/hyperspace.js/master/hyperspace.js"&gt;&lt;/script&gt;</pre>
+                </div>
+                <div class="section">
+                    <h2>Making hyperspace run</h2>
+                    <p>Think of any id name that you are going to keep the hyperspace background over the HTML element
+                        and add the following script line after the previously added script line.</p>
+                    <pre>&lt;script&gt;hyperspace('&lt;id-name&gt;')&lt;/script&gt;</pre>
+                </div>
+                <div class="section">
+                    <h2>Choosing HTML Element</h2>
+                    <p>Just make sure, the element you are going to add the hyperspace on your html. Provide the id
+                        that you are choosen for the hyperspace to be applied.</p>
+                    <pre>&lt;div id="id-name"&gt;&lt;/div&gt;</pre>
+                </div>
+                <div class="section">
+                    <h2>Done</h2>
+                    <p>That's it! hyperspace is now running in your website. hyperspace background is being applied on your choosen element.</p>
+                </div>
+            </div>
+        </div>
+        <!-- first card: github -->
+        <div class="column is-4">
+            <div class="card">
+                <div class="card-image has-text-centered">
+                    <i class="fa fa-github"></i>
+                </div>
+                <div class="card-content">
+                    <div class="content">
+                        <h4>Check Me out on Github. </h4>
+                        <p>Hyperspace.js is a javascript library to add simple canvas based animation and stunning
+                            background effects on HTML Elements for your website. </p>
+                        <p><a href="https://github.com/r-arvind/hyperspace.js" target="_blank">Check Out</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- second card: blog post
 
     <div class="column is-4">
       <div class="card">
@@ -176,10 +226,16 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
--->
-<script src="js/hyperspace.js"></script>
-<script>hyperspace('home');</script>
+  </div> -->
+    </div>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>hyperspace</strong> by <a href="https://github.com/r-arvind/" target="_blank">R Arvind</a>.
+            </p>
+        </div>
+    </footer>
+    <script src="js/hyperspace.js"></script>
+    <script>hyperspace('home');</script>
 </body>
 </html>

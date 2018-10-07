@@ -1,9 +1,9 @@
 
 #me{
-    color:white;
+    /* color:white; */
     text-align: center;
     animation: zoomin 1s;
-    font-size:4.5em;
+    /* font-size:3.5rem; */
 }
 
 #tile1,#tile2,#tile3,#tile4,#tile5,#tile6{
@@ -57,10 +57,17 @@
   
   
   .card {
-    box-shadow: 0px 0px 20px 5px rgb(58, 58, 58);
+    box-shadow: 0 3rem 3rem -1rem rgba(10,10,10,.2);
     margin-bottom: 2rem;
   }
 
+  .hyper_header {
+    display: inline-block;
+    background: #fff;
+    border-radius: 6px;
+    margin: 0px auto;
+    padding: 1.2rem;
+  }
 
 @media only screen and (min-width: 600px){
     #banner{
